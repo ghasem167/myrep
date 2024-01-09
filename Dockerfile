@@ -2,9 +2,6 @@ FROM node:alpine AS node-builder
 
 WORKDIR /backend
 
-COPY package*.json .
-
-
 COPY tsconfig.json .
 
 FROM registry.heroiclabs.com/heroiclabs/nakama:latest

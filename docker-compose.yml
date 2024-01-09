@@ -24,7 +24,7 @@ services:
       - "-ecx"
       - >
           /nakama/nakama migrate up --database.address root@cockroachdb:26257 &&
-          exec /nakama/nakama --name nakama1 --config https://raw.githubusercontent.com/ghasem167/myrep/main/local.yml --database.address root@cockroachdb:26257 --console.password Ali.1@Ali.2 --socket.server_key Sh0*tika* --session.encryption_key j2it167 --runtime.http_key shu%t1ka --session.refresh_encryption_key --j22it11^* --logger.level DEBUG --session.token_expiry_sec 7200 --session.refresh_token_expiry_sec 86400 --metrics.prometheus_port 9100       
+          exec /nakama/nakama --name nakama1 --config /nakama/data/local.yml --database.address root@cockroachdb:26257 --console.password Ali.1@Ali.2 --socket.server_key Sh0*tika* --session.encryption_key j2it167 --runtime.http_key shu%t1ka --session.refresh_encryption_key --j22it11^* --logger.level DEBUG --session.token_expiry_sec 7200 --session.refresh_token_expiry_sec 86400 --metrics.prometheus_port 9100       
     restart: "no"
     links:
       - "cockroachdb:db"
